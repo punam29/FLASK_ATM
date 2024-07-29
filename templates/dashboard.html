@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='demo.css') }}">
+</head>
+<body>
+<img src="{{ url_for('static', filename='images.png') }}" alt="ATM" class="atm-image">
+
+    <h1>Welcome, {{ username }}</h1>
+    <p>Your balance: ${{ balance }}</p>
+    <form action="/withdraw/{{ username }}" method="post">
+        <label for="amount">Withdraw Amount:</label>
+        <input type="number" id="amount" name="amount" required>
+        <button type="submit">Withdraw</button>
+    </form>
+    <form action="/deposit/{{ username }}" method="post">
+        <label for="amount">Deposit Amount:</label>
+        <input type="number" id="amount" name="amount" required>
+        <button type="submit">Deposit</button>
+    </form>
+</body>
+</html>

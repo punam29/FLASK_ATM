@@ -1,0 +1,50 @@
+/* static/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Ensure vertical stacking */
+    height: 100vh;
+    margin: 0;
+    padding: 20px; /* Add some padding to the body */
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px; /* Space below the balance paragraph */
+}
+.atm-image {
+    width: 150px; /* Increased size */
+    max-width: 150%; /* Ensure it doesn't get too large */
+    height: auto;
+    margin-bottom: 30px; /* Space below the image */
+}
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px; /* Space between forms */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border:
